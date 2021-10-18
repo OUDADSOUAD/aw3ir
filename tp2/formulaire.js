@@ -23,7 +23,7 @@ if(document.getElementById("Date").value.length<5)
 
 const dateNaissance = new Date(document.getElementById("Date").value);
     if (dateNaissance.getTime() > Date.now()) {
-      document.getElementById("Error").innerHTML = "Veuillez insérer une date de naissance valide";
+      document.getElementById("Error").innerHTML = "Veuillez insérer une date valide";
       return false;
     }
 
