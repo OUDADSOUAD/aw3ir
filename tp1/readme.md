@@ -6,7 +6,7 @@
 
 <p align="center">
 <kbd><img src="index.png" width="500"></kbd><br/>
-<h3 align="center">TP1 : CV<br/>
+<h3 align="center">TP1 : CV (moche)<br/>
 </p>
 
 </h3>
@@ -97,14 +97,17 @@ Référence technique <a href="https://www.w3schools.com/">w3schools.com</>
            ```css
            transform : scale(2);
            ```
+    * Ajouter un gradient de couleur pour la couleur de fond
+      * https://developer.mozilla.org/en-US/docs/Web/CSS/gradient
+      * 
     * Utilisation des mediaquery
         * Les mediaquery permettent d’appliquer du CSS seulement quand l’écran de l’utilisateur a une certaine largeur ou hauteur.
         * Ecrire des règles qui :
-            * change la couleur de fond, quand l’écran à une taille max de 300px, max 600px, max 900px et plus de 900px
+            * change la couleur de fond, quand l’écran à une taille max de 600px
             ```css
             @media only screen and (max-width: 600px) {
                 body {
-                    background-color: lightblue;
+                    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
                 }
             }
             ```
